@@ -1,0 +1,36 @@
+{
+  "contextFileName": "AGENTS.md",
+  "ide": {
+    "enabled": true
+  },
+  "ui": {
+    "loadingPhrases": "all",
+    "customWittyPhrases": [
+      "Calculating the standing charge for maximum 'efficiency'...",
+      "Teaching the smart meters to be a bit more humble...",
+      "Waiting for the DataHub to stop judging our requests...",
+      "Converting excess static electricity into billable metadata...",
+      "Encouraging the Artisan to work slightly faster...",
+      "Applying a fresh coat of sarcasm to the user interface...",
+      "Attempting to explain the 'Service Fee' to the ghost of common sense...",
+      "Syncing with the grid. Mind the sparks...",
+      "Pruning the vendor folder. It's developed its own ecosystem...",
+      "Reducing latency by exactly one shrug...",
+      "Pumping raw data through the pipes. Watch for leaks...",
+      "Persuading the meter readings to look more 'optimistic'...",
+      "Importing 'Cosiness' metrics. Translation: 404 Not Found...",
+      "Distilling 10,000 lines of PHP into one very confused invoice...",
+      "Loading... because even electrons have union-mandated breaks...",
+      "Searching the legacy code for the legendary 'Reasonable Logic'...",
+      "Reconciling accounts. It's more of a 'heated discussion' really...",
+      "Polishing the carbon footprint to make it look like a pebble...",
+      "Refactoring the billing engine. Now with 20% more 'Why?'...",
+      "Waiting for the Vue to react. It's currently 'resting'...",
+      "Ensuring the billing cycle is as circular as our reasoning...",
+      "Rounding up to the nearest pound. For 'administrative ease'...",
+      "Sifting through the DataHub for signs of intelligent life...",
+      "Migrating the database. It's currently in transit somewhere near Slough...",
+      "Finalising the 'Standard Variable Rate' of mild annoyance..."
+    ]
+  }
+}

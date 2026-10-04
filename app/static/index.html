@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Downloader - Local</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="app-header">
+      <h1>YouTube Downloader</h1>
+      <p class="subtitle">Descarga sencilla de vídeos y audios en tu máquina local</p>
+    </header>
+
+    <form id="downloadForm" class="card">
+      <div class="form-group">
+        <label for="urlInput">URL del vídeo de YouTube</label>
+        <input 
+          type="url" 
+          id="urlInput" 
+          name="url" 
+          placeholder="https://www.youtube.com/watch?v=..." 
+          required 
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Formato de salida</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="format" value="mp4" checked>
+            <span>MP4 (Vídeo + Audio)</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="format" value="mp3">
+            <span>MP3 (Solo Audio)</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group" id="qualityGroup">
+        <label for="qualitySelect">Calidad máxima deseada</label>
+        <select id="qualitySelect" name="quality">
+          <option value="best">Mejor disponible</option>
+          <option value="1080p" selected>1080p (FHD)</option>
+          <option value="720p">720p (HD)</option>
+          <option value="480p">480p (SD)</option>
+        </select>
+        <span class="help-text">Si la resolución no existe, descargará automáticamente la mejor inferior disponible.</span>
+      </div>
+
+      <button type="submit" id="submitBtn" class="btn-primary">
+        Descargar
+      </button>
+    </form>
+
+    <section id="statusSection" class="card status-card" aria-live="polite">
+      <h2>Estado de la descarga</h2>
+      
+      <div class="status-indicator">
+        <span class="status-label">Estado:</span>
+        <span id="statusText" class="status-badge status-idle">En espera</span>
+      </div>
+
+      <div class="progress-wrapper" id="progressWrapper">
+        <div class="progress-bar-bg">
+          <div id="progressBar" class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+        <div class="progress-meta">
+          <span id="percentText">0%</span>
+        </div>
+      </div>
+
+      <div id="resultBox" class="result-box hidden">
+        <span class="result-label">Archivo completado:</span>
+        <code id="filenameText" class="result-filename"></code>
+        <p class="destination-note">Guardado en: <strong>downloads/</strong></p>
+      </div>
+
+      <div id="errorBox" class="error-box hidden">
+        <strong>Error:</strong> <span id="errorText"></span>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
